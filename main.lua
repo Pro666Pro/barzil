@@ -46,28 +46,28 @@ local Tp = Teleport:AddSection({
 	Name = "teleport"
 })
 
-Scripts:AddButton({
+Tp:AddButton({
 	Name = "Teleport To Clown",
 	Callback = function()
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(189.0246124267578, 2.999999761581421, 222.7089385986328)
 	 end
 })
 
-Scripts:AddButton({
+Tp:AddButton({
 	Name = "Teleport To Oog",
 	Callback = function()
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-232.6268768310547, 2.999999761581421, 197.9968719482422)
 	 end
 })
 
-Scripts:AddButton({
+Tp:AddButton({
 	Name = "Teleport To Key Place",
 	Callback = function()
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247.56419372558594, -265.0000305175781, -370.77752685546875)
 	 end
 })
 
-Scripts:AddButton({
+Tp:AddButton({
 	Name = "Teleport To Mortis Office",
 	Callback = function()
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(249.06558227539062, -60.000003814697266, -358.0025329589844)
