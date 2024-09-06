@@ -35,3 +35,41 @@ Scripts:AddButton({
 			 loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
 	 end
 })
+
+local Teleport = Window:MakeTab({
+	Name = "Teleport",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tp = Teleport:AddSection({
+	Name = "teleport"
+})
+
+Scripts:AddButton({
+	Name = "Teleport To Clown",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(189.0246124267578, 2.999999761581421, 222.7089385986328)
+	 end
+})
+
+Scripts:AddButton({
+	Name = "Teleport To Oog",
+	Callback = function()
+			 loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+	 end
+})
+
+Scripts:AddButton({
+	Name = "Teleport To Key Place",
+	Callback = function()
+			 loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+	 end
+})
+
+Scripts:AddButton({
+	Name = "Teleport To Mortis Office",
+	Callback = function()
+			 loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+	 end
+})
