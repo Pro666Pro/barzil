@@ -56,20 +56,20 @@ Scripts:AddButton({
 Scripts:AddButton({
 	Name = "Teleport To Oog",
 	Callback = function()
-			 loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-232.6268768310547, 2.999999761581421, 197.9968719482422)
 	 end
 })
 
 Scripts:AddButton({
 	Name = "Teleport To Key Place",
 	Callback = function()
-			 loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247.56419372558594, -265.0000305175781, -370.77752685546875)
 	 end
 })
 
 Scripts:AddButton({
 	Name = "Teleport To Mortis Office",
 	Callback = function()
-			 loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(249.06558227539062, -60.000003814697266, -358.0025329589844)
 	 end
 })
