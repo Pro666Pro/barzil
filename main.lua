@@ -73,3 +73,84 @@ Tp:AddButton({
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(249.06558227539062, -60.000003814697266, -358.0025329589844)
 	 end
 })
+
+Tp:AddButton({
+	Name = "Teleport To Boxing Gloves",
+	Callback = function()
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4231.26123046875, 3505.86376953125, 270.4519958496094)
+	 end
+})
+
+local Badges = Window:MakeTab({
+	Name = "Badges",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local BG = Badges:AddSection({
+	Name = "get badges"
+})
+
+BG:AddButton({
+	Name = "Get Fan",
+	Callback = function()
+wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "script by nexer" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247.56419372558594, -265.0000305175781, -370.77752685546875)
+wait(0.5)
+game:GetService("ReplicatedStorage").RemoteEvents.SuitUpClown:FireServer()
+wait(0.1)
+game:GetService("ReplicatedStorage").RemoteEvents.KeyQuest:FireServer()
+wait(0.1)
+game:GetService("ReplicatedStorage").RemoteEvents.KeyAcquired:FireServer()
+wait(0.1)
+game:GetService("ReplicatedStorage").RemoteEvents.GOHOME:FireServer()
+wait(0.1)
+game:GetService("ReplicatedStorage").RemoteEvents.KeyBadgeReward:FireServer()
+wait(0.1)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "nice job",Text = "you got fan :]" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+	 end
+})
+
+BG:AddButton({
+	Name = "Get Boxer",
+	Callback = function()
+wait
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "script by nexer" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4231.26123046875, 3505.86376953125, 270.4519958496094)
+wait(0.5)
+fireclickdetector(workspace.BoxingGloves.ClickDetector)
+wait(3)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "nice job",Text = "you got boxing gloves :]" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+	 end
+})
+
+BG:AddButton({
+	Name = "Get Fan + Boxer",
+	Callback = function()
+wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "script by nexer" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+wait(1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(247.56419372558594, -265.0000305175781, -370.77752685546875)
+wait(0.5)
+game:GetService("ReplicatedStorage").RemoteEvents.SuitUpClown:FireServer()
+wait(0.1)
+game:GetService("ReplicatedStorage").RemoteEvents.KeyQuest:FireServer()
+wait(0.1)
+game:GetService("ReplicatedStorage").RemoteEvents.KeyAcquired:FireServer()
+wait(0.1)
+game:GetService("ReplicatedStorage").RemoteEvents.GOHOME:FireServer()
+wait(0.1)
+game:GetService("ReplicatedStorage").RemoteEvents.KeyBadgeReward:FireServer()
+wait(0.1)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "nice job",Text = "you got fan :]" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+wait(0.1
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4231.26123046875, 3505.86376953125, 270.4519958496094)
+wait(0.5)
+fireclickdetector(workspace.BoxingGloves.ClickDetector)
+wait(0.5)
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "nice job",Text = "you got boxing gloves :]" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+	 end
+})
